@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".FirstActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:text="What do you want to do ?"
+            android:gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_below="@id/text_title">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            android:id="@+id/notesRL"
+            android:background="@drawable/bordertextview"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Read Notes"
+                android:fontFamily="casual"
+                android:textColor="@color/colorHeading"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/note"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:background="@drawable/bordertextview"
+            android:layout_margin="4dp"
+            android:id="@+id/quesRL"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Solve Questions"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textColor="@color/colorHeading"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/questions"
+                app:lottie_autoPlay="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            android:id="@+id/formulaeRL"
+            android:background="@drawable/bordertextview"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Revise Formulae"
+                android:fontFamily="casual"
+                android:textColor="@color/colorHeading"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/formulae"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:id="@+id/booksRL"
+            android:background="@drawable/bordertextview"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy Books"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textColor="@color/colorHeading"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/books"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="4dp"
+            android:id="@+id/videoRL"
+            android:background="@drawable/bordertextview"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Watch Videos"
+                android:fontFamily="casual"
+                android:textColor="@color/colorHeading"
+                android:textStyle="bold" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/video"
+                tools:ignore="RtlHardcoded" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:layout_margin="4dp"
+            android:id="@+id/meRL"
+            android:background="@drawable/bordertextview"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Me"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:fontFamily="casual"
+                android:textColor="@color/colorHeading"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                app:lottie_rawRes="@raw/about_me"
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"/>
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            app:lottie_rawRes="@raw/share"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_margin="8dp"
+            android:background="@drawable/bordertextview"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

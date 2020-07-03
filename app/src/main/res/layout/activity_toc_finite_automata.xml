@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".TOC_finiteAutomata">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finite Automata"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorHeading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Finite automata will have finite number of states.Finite automata is characterized hy having no temporary storage.It can be classified as -\n
+1) Finite automata without output\n
+2) Finite automata with output"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Finite automata with output"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="1) Deterministic Finite Automata\n
+2) Non-deterministic Finite Automata"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deterministic Finite Automata"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A finite automaton is a collection of 5-tuple \n
+            (Q, ∑, δ, q0, F)\n where:\n
+Q: finite set of states\n
+∑: finite set of the input symbol\n
+q0: initial state\n
+F: final state\n
+δ: Transition function "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-deterministic Finite Automata"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regular Language"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A language L is called regular if and only if there exists some deterministic
+finite accepter M such that\n
+L : L ( M ).\nTo show that this or any other langualge is regular, all we have
+to do is find a dfa for it.\nRegular languages are most restricted type of languages."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to check whether language is Regular or not"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="1) If language is finite , it is Regular.\n
+2)If we can construct a DFA or NFA for it."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pumping Lemma for Regular Languages"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="If L is an infinite language then there exists some positive integer ‘p’ such that any string has length |w|>=p then w can be divided into three parts , w=xyz satisfy following conditions for each
+i>=0 , xy^iz belongs to L , |y| greater than 0 and |xy| less than or equal to p\n
+p is also called Pumping length.\n
+Pumping lemma is a negative test , where if a language fails then it is not regular but if it passes then it is undecidable.
+\n\n
+Sample Problem\n
+Prove using pumping lemma A= {a^nb^n | n>=0} is not regular?\n
+	Assume A is regular , then pumping length = p and string be S = a^pb^p and divide this string into three parts x, y, z.\n
+	Let p=4 ,so string is aaaabbbb\n
+	CASE 1 : If y is in a part\n
+	aa  aa bbbb\n
+     x  y   z\n
+	CASE 2: If y is in b part\n
+	aaaa bb bb\n
+     x    y z\n
+	CASE 3: If y is in ab part\n
+	aaa ab bbb\n
+     x  y   z\n
+    Now for above cases take xy^iz where i =2\n
+	In CASE 1 , for xy^iz or xy^2z , string S is aa aaaa bbbb , but here number of a is not equal to number of b. Hence, string is not regular.\n
+	In CASE 2 , for xy^iz or xy^2z , string S is aaaa bbbb bb , but here number of a is not equal to number of b. Hence, string is not regular.\n
+	In CASE 3 , for xy^iz or xy^2z , string S is aaa abab bbb , but here number of a is not equal to number of b. Hence, string is not regular.\n	Hence in any of the above case condition did not satisfy so string is not regular as S cannot be pumped and even |xy| less than or equal to p is also not satisfied.\n"/>
+
+    </LinearLayout>
+</ScrollView>

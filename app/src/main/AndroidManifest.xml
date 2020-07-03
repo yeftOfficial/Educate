@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yeftapps.educate">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo_bold"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TOC_rl"></activity>
+        <activity android:name=".OS_scheduling" />
+        <activity android:name=".DM_proposition" />
+        <activity android:name=".TOC_PDA" />
+        <activity android:name=".TOC_CFL" />
+        <activity android:name=".Ques_C_Pointer" />
+        <activity android:name=".Prog_Pointer" />
+        <activity android:name=".TOC_finiteAutomata" />
+        <activity android:name=".DSA_tree" />
+        <activity android:name=".DSA_dividenconquer" />
+        <activity android:name=".DSA_recursion" />
+        <activity android:name=".DSA_greedy" />
+        <activity android:name=".DSA_asymptoicNotation" />
+        <activity android:name=".DBMS_normalisation" />
+        <activity android:name=".DSA_Introduction" />
+        <activity android:name=".BookActivity" />
+        <activity android:name=".DSAsortActivity" />
+        <activity android:name=".DSAsearchActivity" />
+        <activity android:name=".CompilerIndexActivity" />
+        <activity android:name=".OsIndexActivity" />
+        <activity android:name=".DmIndexActivity" />
+        <activity android:name=".DbmsIndexActivity" />
+        <activity android:name=".DsaIndexActivity" />
+        <activity android:name=".EmIndexActivity" />
+        <activity android:name=".DeldIndexActivity" />
+        <activity android:name=".ProgIndexActivity" />
+        <activity android:name=".TocIndexActivity" />
+        <activity android:name=".coaIndexActivity" />
+        <activity android:name=".cnIndexActivity" />
+        <activity android:name=".SubQuesActivity" />
+        <activity android:name=".SubNotesActivity" />
+        <activity android:name=".FirstActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

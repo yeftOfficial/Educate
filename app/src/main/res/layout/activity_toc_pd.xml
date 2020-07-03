@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".TOC_PDA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pushdown Automata"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorHeading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pushdown Automata (PDA)"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Pushdown automata are like finite automata but have an extra memory component called stack. Pushdown automata are equivalent in power to context free grammar. The power of non-deterministic pushdown automata is more than deterministic pushdown automata. PDA consists of a state control ,an input tale and a stack. A stack is a ‘last in, first out’ storage device.\n\n
+A pushdown automata is a 6-tuple (Q,Σ,δ,Γ,q0,F) where\n
+Q is the set of states\n
+Σ is the input alphabet\n
+Γ is the stack symbol\n
+δ is transition function\n
+q0 is start state\n
+F is the set of accept states\n
+Transition function is δ : Q x Σ  x Γ → Q x Γ*\n
+In simple words this transition function means that “On a state where we read an input from tape and top of stack → we go to next state and perform operation (push/pop) on stack”
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Non-Deterministic Pushdown Automata"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="The only difference here is that transition takes є-transition, so δ becomes\n
+δ : Q x {Σ ∪ ∈} x Γ → Q x Γ*
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Define the pushdown automata for language {anbn | n > 0}\n\n
+Solution\n
+Q = { q0, q1 } and Σ = { a, b } and Γ = { A, Z }\n\n
+δ ( q0, a, Z ) = { ( q0, AZ ) }\n
+δ ( q0, a, A) = { ( q0, AA ) }\n
+δ ( q0, b, A) = { ( q1, ∈) }\n
+δ ( q1, b, A) = { ( q1, ∈) }\n
+δ ( q1, ∈, Z) = { ( q1, ∈) }\n
+Here , { ( q1, ∈) } means a pop operation.
+"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Turnstile notation"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="⊢ sign is called a “turnstile notation” and represents one move.\n
+⊢* sign represents a sequence of moves.\n
+Eg- (p, b, T) ⊢ (q, w, α)"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pumping Lemma for CFL"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="It is used to prove that language is not context free.\n
+If A is a CFL then A has a pumping length P such that any string S where |S| >=P may be divided into 5 pieces S=uvxyz such that following condition is true:\n
+1)	Uv^ixy^iz is in A for every i>=0\n
+2)	|vy|>0\n
+3)	|vxy|less than or equal to P\n\n
+We will prove it using contradiction using following steps.\n\n
+1)	Assume A is context free.\n
+2)	It has to have a Pumping Length (say P)\n
+3)	All strings longer than P can be pumped |S|>=P\n
+4)	Now find a string ‘S’ in A such that |S|>=P\n
+5)	Divide S into uvxyz\n
+6)	Shaw that uv^ixy^iz does not belong to A for some i\n
+7)	Then consider the ways that S can be divided into uvxyz\n
+8)	Show that none of these can satisfy all the three pumping conditions at the same time.\n
+9)	S cannot be pumped\n
+"/>
+    </LinearLayout>
+</ScrollView>

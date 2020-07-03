@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".DSA_recursion">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recursion and Backtracking"
+        android:textAlignment="center"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorHeading"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordertextview"
+        android:padding="12dp"
+        android:text="Any function which calls itself is called recursive. A recursive method solves a problem by
+calling a copy of itself to work on a smaller problem.Recursion is most useful for tasks that can be defined in terms of
+similar subtasks. For example, sort, search, and traversal problems."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes on Recursion"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="• Iterative solutions are more efficient than recursive solutions [due to the
+overhead of function calls].
+\n• A recursive algorithm can be implemented without recursive function calls using a
+stack, but it’s usually more trouble than its worth."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Example of Recursion"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="• Fibonacci Series, Factorial Finding
+\n• Merge Sort, Quick Sort
+\n• Binary Search
+\n• Tree Traversals and many Tree Problems: InOrder, PreOrder PostOrder
+\n• Graph Traversals: DFS [Depth First Search] and BFS [Breadth First Search]
+\n• Dynamic Programming Examples
+\n• Divide and Conquer Algorithms
+\n• Towers of Hanoi
+\n• Backtracking Algorithms"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Backtracking"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notes on Recursion"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text=""/>
+
+    </LinearLayout>
+</ScrollView>

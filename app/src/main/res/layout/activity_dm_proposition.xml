@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".DM_proposition">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Propositional Logic"
+        android:textAlignment="center"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorHeading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Propositions"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A proposition is a declarative sentence that is either true or false, but not both.\nExample, 2+2 =22 is false and hence a proposition but x+y = 7 is neither true or false hence not a proposition."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Propositional Logic"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="The area of logic that deals with propositions is called propositional logic or propositional calculus. The truth value of a proposition is true and denoted by T. Propositional variables are variables that represent propositions, conventional letters used for propositional variables are p,q,r,s…"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Negation"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Let p be proposition. Then negation of p is denoted by ￢p and read as ‘not p’. Example, ‘Prakhar’s mobile runs Android’.\n
+Negation will be ‘Prakhar’s mobile does not run Android’.\n
+Truth table of ￢p\n\n
+p     ￢p\n
+T      F\n
+F      T\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conjunction"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Let p and q be propositions. The conjunction of p and q, denoted by p ∧ q is read as ‘p and q’. It is only true when both p and q are true.\n
+Truth table of p ∧ q is,\n\n
+p     q     p ∧ q\n
+T     T       T\n
+T     F       F\n
+F     T       F\n
+F     F       F\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exclusive OR"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Let p and q be propositions. The exclusive or of p and q is denoted by p ⊕ q, it is true when exactly one of p and q is true.\n
+Truth table of p ⊕ q,\n\n
+p     q     p ⊕ q\n
+T     T       F\n
+T     F       T\n
+F     T       T\n
+F     F       F\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conditional Statement"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Let p and q be propositions. The conditional statement p → q means ‘if p, then q’. It is false when p is true and q is false and true otherwise. p is called the hypothesis or antecedent or premise and q is called the conclusion or consequence.\n
+Truth table of p → q,\n\n
+p     q     p → q\n
+T     T       T\n
+T     F       F\n
+F     T       T\n
+F     F       T\n
+\n\n
+Variety of terminologies are used to represent conditional statements, like\n
+•	If p, then q\n
+•	If p,q\n
+•	p implies q\n
+•	p only if q\n
+•	q whenever p\n
+•	q when p\n
+•	q if p\n
+•	p is sufficient for q\n
+•	q follows from p\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bi-conditional statement"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Let p and q be propositions. The bi-conditional statement p ↔ q means ‘ p if and only if q’ , it is true when p and q have same values. It is also called bi-implications.\n
+Truth table\n\n
+p     q     p ↔ q\n
+T     T       T\n
+T     F       F\n
+F     T       F\n
+F     F       T\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Converse, Contrapositive, Inverse"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Let conditional statement be p → q, converse is q → p, contrapositive is ￢q →￢p and inverse is ￢p →￢q.\n
+When two conditional statements have same truth values then we call it equivalent.\n
+•	Conditional statement and contrapositive are equivalent.\n
+•	Converse and inverse are equivalent but neither is equivalent to original conditional statement.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precedence of Logical operators"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Negation > Conjunction > Disjunction > Conditional > Bi-conditional"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tautology, Contradiction, Contingency"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A compound proposition which is always true, no matter what the truth values of the propositional variables that occur in it, is called tautology.\n
+ A compound proposition that is always false is called contradiction.\n
+A compound proposition that is neither tautology nor contradiction is called contingency."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logical equivalence"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="The compound propositions p and q are logically equivalent if p ↔ q is a tautology. It is denoted by ≡."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laws of Logical Equivalnece"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="•	De Morgan’s Law\n\n
+￢(p ∧ q) ≡ ￢p ∨￢q\n
+￢(p ∨ q) ≡ ￢p ∧￢q \n\n
+•	Identity Law\n\n
+p ∧ T ≡ p\n
+p ∨ F ≡ p\n\n
+•	Domination Law\n\n
+p ∨ T ≡ T\n
+p ∧ F ≡ F\n\n
+•	Idempotent Law\n\n
+p ∨ p ≡ p\n
+p ∧ p ≡ p\n\n
+•	Commutative Law\n\n
+p ∨ q ≡ q ∨ p\n
+p ∧ q ≡ q ∧ p\n\n
+•	Associative Law\n\n
+(p ∨ q) ∨ r ≡ p ∨ (q ∨ r)\n
+(p ∧ q) ∧ r ≡ p ∧ (q ∧ r)\n\n
+•	Distributive Law\n\n
+p ∨ (q ∧ r) ≡ (p ∨ q) ∧ (p ∨ r)\n
+p ∧ (q ∨ r) ≡ (p ∧ q) ∨ (p ∧ r)\n\n
+•	Absorption Law\n\n
+p ∨ (p ∧ q) ≡ p\n
+p ∧ (p ∨ q) ≡ p\n\n
+•	Negation Law\n\n
+p ∨￢p ≡ T\n
+p ∧￢p ≡ F
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logical equivalence using conditional statement"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="•	p → q ≡ ￢p ∨ q\n
+•	p → q ≡ ￢q →￢p\n
+•	p ∨ q ≡ ￢p → q\n
+•	p ∧ q ≡ ￢(p →￢q)\n
+•	￢(p → q) ≡ p ∧￢q\n
+•	(p → q) ∧ (p → r) ≡ p → (q ∧ r)\n
+•	(p → r) ∧ (q → r) ≡ (p ∨ q) → r\n
+•	(p → q) ∨ (p → r) ≡ p → (q ∨ r)\n
+•	(p → r) ∨ (q → r) ≡ (p ∧ q) → r\n
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logical equivalence using bi-conditional statement"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="•	p ↔ q ≡ (p → q) ∧ (q → p)\n
+•	p ↔ q ≡ ￢p ↔￢q\n
+•	p ↔ q ≡ (p ∧ q) ∨ (￢p ∧￢q)\n
+•	￢(p ↔ q) ≡ p ↔￢q\n
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Propositional Satisfiability"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A compound proposition is satisfiable if there is an assignment of truth values to its variables that makes it true.\n
+When the compound proposition is false for all assignment of truth values to its variables, the compound proposition is unsatisfiable.
+"/>
+
+
+    </LinearLayout>
+</ScrollView>

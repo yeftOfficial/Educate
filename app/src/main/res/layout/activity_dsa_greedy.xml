@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_height="match_parent"
+    tools:context=".DSA_greedy">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Greedy Algorithm"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorHeading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Greedy algorithms work in stages. In each stage, a decision is made that is good at that point,
+without bothering about the future. This means that some local best is chosen. It assumes that a
+local good selection makes for a global optimal solution.\n\tMaking locally optimal choices does not always work. Hence, Greedy algorithms will not always
+give the best solutions."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Property of Greedy Algorithm"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="The two basic properties of optimal Greedy algorithms are:
+\n1) Greedy choice property
+\n2) Optimal substructure"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Greedy choice property"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="This property says that the globally optimal solution can be obtained by making a locally optimal
+solution (Greedy). The choice made by a Greedy algorithm may depend on earlier choices but not
+on the future."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Optimal substructure"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A problem exhibits optimal substructure if an optimal solution to the problem contains optimal
+solutions to the subproblems. That means we can solve subproblems and build up the solutions to
+solve larger problems."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Greedy Applications"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="• Sorting: Selection sort, Topological sort
+\n• Priority Queues: Heap sort
+\n• Huffman coding compression algorithm
+\n• Prim’s and Kruskal’s algorithms
+\n• Shortest path in Weighted Graph [Dijkstra’s]
+\n• Coin change problem
+\n• Fractional Knapsack problem
+\n• Disjoint sets-UNION by size and UNION by height (or rank)
+\n• Job scheduling algorithm
+\n• Greedy techniques can be used as an approximation algorithm for complex problems"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Huffman Coding Algorithm"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="The basic idea behind the Huffman coding algorithm is to use fewer bits for more frequently
+occurring characters. The Huffman coding algorithm compresses the storage of data using
+variable length codes.\n\nGiven a sequence with frequency, arrange it in increasing order
+and start building a tree starting with two nodes with smallest frequencies.\nAfter tree is formed
+traverse the tree from root node and for each move to the left, append a 0
+to the code, and for each move to the right, append a 1."/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_play"
+            android:background="@drawable/buttondesign"
+            android:textColor="#ffffff"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="Watch Video of Huffman Coding"/>
+
+    </LinearLayout>
+</ScrollView>

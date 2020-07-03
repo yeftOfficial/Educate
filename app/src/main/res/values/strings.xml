@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">educate!</string>
+
+    <string name="card_notes">Read Notes</string>
+    <string name="card_book">Buy Books</string>
+    <string name="card_questions">Solve Questions</string>
+    <string name="card_test">Test ?</string>
+    <string name="card_youtube">Watch Videos</string>
+    <string name="card_formuale">Revise Formulae</string>
+
+    <string name="subject_dsa">Data Structures and Algorithm</string>
+    <string name="subject_toc">Theory of Computation</string>
+    <string name="subject_dbms">Database Management</string>
+    <string name="subject_os">Operating System</string>
+    <string name="subject_dm">Discrete Mathematics</string>
+    <string name="subject_em">Engineering Mathematics</string>
+    <string name="subject_c">Compiler</string>
+    <string name="subject_cn">Computer Network</string>
+    <string name="subject_prog">Programming in C</string>
+    <string name="subject_deld">Digital Electronics</string>
+    <string name="subject_coa">Computer Organization and Architecture</string>
+
+</resources>

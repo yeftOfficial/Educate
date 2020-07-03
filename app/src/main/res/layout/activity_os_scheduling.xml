@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".OS_scheduling">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPU Scheduling"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorHeading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="CPU Scheduling is the basis of multi-programmed OS. It is used to increase performance of CPU by switching CPU among processes. It is used in single-processor system. "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CPU Scheduler"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Whenever CPU becomes idle, a process is picked from ready queue to be executed which is performed by scheduler.\n
+Dispatcher is a program that switches the processor from one process to another. Scheduler only selects process, it is dispatcher who do context switching.
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preemptive and Non-preemptive"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="In non-preemptive scheduling, once CPU has been allocated to the process, it keeps it until it has terminated or switched to waiting state.\n
+In preemptive scheduling, process switches from running state to ready state or from waiting state to ready state, with the intention of resuming the process at a later time.
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scheduling Criteria"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="•	Throughput : Measure of CPU work is the number of processes that are completed per unit time, called throughput.\n\n
+•	Burst Time : Time required by a process for CPU execution.\n\n
+•	Turnaround time : The interval from time of submission of a process to the time of completion is called turnaround time.\n
+Turnaround time = Completion time – Arrival time\n\n
+•	Waiting time : It is the sum of the periods spent waiting in the ready queue.\n
+Waiting time = Turnaround time – Burst time\n\n
+•	Response time : It is the time from the submission of a request until the first response is produced. It is the time it takes to start responding, not the time it takes to output the response.
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gantt Chart"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="It is a rectangular bar graph which is used to illustrate process scheduling."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scheduling Algorithms"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="•	First Come, First Served\n
+Process which requests CPU first is allocated first. If an early process comes with a large burst time then it is called convoy effect.\n\n
+•	Shortest Job First\n
+CPU is assigned the process that has smallest next CPU burst. If the next CPU bursts of two processes are the same, FCFS is used. It is optimal, it gives minimum turnaround time, minimum average waiting time and high throughput.\n\n
+•	Round Robin Scheduling\n
+It is designed for time-sharing systems. It is FCFS but with preemption. A time quantum is a small unit of time for which each process is allowed to run. The ready queue is treated as a circular queue. For processes having burst time less than time quantum leave CPU voluntarily after executing.\n\n
+•	Priority Scheduling\n
+A priority is associated with each process and CPU is allocated to the process with highest priority. SJF is a special case of priority algorithm. Major problem is starvation.\n\n
+•	Multilevel Queue Scheduling\n
+It partitions the ready queue into several separate queues. Each queue has its own scheduling algorithm.\n\n
+•	Shortest Remaining Time First\n
+It is a preemptive version of shortest job next scheduling. In this scheduling algorithm, the process with the smallest amount of time remaining until completion is selected to execute. If two processes have same burst time then we pick that process which has least arrival time.
+"/>
+
+    </LinearLayout>
+
+</ScrollView>

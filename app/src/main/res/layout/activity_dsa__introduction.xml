@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".DSA_Introduction">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Introduction"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorHeading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Variables"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Variables are used for holding data."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Type"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A data type in a programming language is a set of data with
+predefined values. Examples of data types are: integer, floating point, unit number, character,
+string, etc.\n\nAt the top level, there are two types of data types:\n(A) System Defined Data Type
+(Primitive Data Type)\n(B) User Defined Data Type"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="System Defined Data Type "
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Data types that are defined by system are called primitive data types. The primitive data types
+provided by many programming languages are: int, float, char, double, bool, etc. The number of
+bits allocated for each primitive data type depends on the programming languages, the compiler
+and the operating system. For the same primitive data type, different languages may use different
+sizes.For example, “int” may take 2 bytes or 4 bytes."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Defined Data Type "
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="If the system-defined data types are not enough, then most programming languages allow the users
+to define their own data types, called user – defined data types. Good examples of user defined
+data types are: structures in C/C + + and classes in Java."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Structure"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data structure is a particular way of storing and
+organizing data in a computer so that it can be used efficiently.Example :-Arrays, files, linked
+lists, stacks, queues, trees, graphs and so on.\n\nDepending on the organization of the elements, data structures are classified into two types:\n
+elements, data structures are classified into two types:\n\n
+1) Linear data structures: Elements are accessed in a sequential order but it is not
+compulsory to store all elements sequentially (say, Linked Lists). Examples: Linked
+Lists, Stacks and Queues.\n\n
+2) Non – linear data structures: Elements of this data structure are stored/accessed in a
+non-linear order. Examples: Trees and graphs."
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abstract Data Type"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="we combine the data structures with their operations
+and we call this Abstract Data Types (ADTs).\nCommonly used ADTs include: Linked Lists, Stacks, Queues, Priority Queues, Binary Trees
+\n\nAn ADT consists of two parts:\n 1. Declaration of data\n
+2. Declaration of operations"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Algorithm"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="An algorithm is a step-by-step unambiguous instructions to solve a given problem."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rate of Growth"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="The rate at which the running time increases as a function of input is called rate of growth."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Types of Analysis"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="There are three types of analysis:\n• Worst case\n ○ Defines the input for which the algorithm takes a long time (slowest
+time to complete).\n
+○ Input is the one for which the algorithm runs the slowest.\n\n• Best case\n ○ Defines the input for which the algorithm takes the least time (fastest
+time to complete).\n
+○ Input is the one for which the algorithm runs the fastest.\n\n• Average case\n○ Provides a prediction about the running time of the algorithm.
+\n○ Run the algorithm many times, using many different inputs that come
+from some distribution that generates these inputs, compute the total
+running time (by adding the individual times), and divide by the
+number of trials.
+\n○ Assumes that the input is random."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Switch to next Topic to learn Asymptotic Notations"
+            android:textColor="@color/colorAccent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_play"
+            android:text="Youtube"
+            android:padding="10dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttondesign"
+            android:drawableLeft="@drawable/ic_play" />
+    </LinearLayout>
+
+</ScrollView>

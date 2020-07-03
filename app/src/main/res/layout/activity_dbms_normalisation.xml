@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    tools:context=".DBMS_normalisation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Functional Dependency and Normalisation"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorHeading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Functional Dependency"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="In any relation R, if there exists a set of attributes A1,A2, A3,….An and an attribute B such that two tuples (rows) have the same value for A1,A2…..An then B will also have same value. So,\n
+A1, A2, A3….An → B\n
+Functional dependency is a generalization of the notion of a key. It requires the value for a certain set of attributes to determine uniquely values of another set of attributes.\n
+Group of attributes on the left hand side of arrow of FD are called determinants and right side is called dependent. FD is represented by →.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multivalued Dependency"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="It is denoted by →→. It is a special case of a join dependency, with only two sets of  values involved, i.e., it is a binary join dependency. A multivalued dependency exists when there are at least three attributes like A,B,C in a relation and for a value of A there is a well-defined set of values of B and a well  defined set of values of C. However, the set of values of B is independent of set of values of C and vice-versa.  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Armstrong’s Axiom"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="It is a set of axioms used to infer all the functional dependencies on a relational database.\n
+•	Reflexivity : If B is a subset of A then A →B\n
+•	Augmentation : If A →B, then A ᴗ C →B ᴗ C\n
+•	Transitivity: If A→B and B→C then A→C\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trivial Functional Dependency"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A functional dependency where the right hand side is contained within the left hand side is called a trivial functional dependency.\nExample,
+A, B → A\n
+If there is at least one element on the RHS that is not contained in the LHS is called non-trivial and if none of the elements of the RHS are contained in the LHS, it is called completely non-trivial functional dependency.\n
+If in FD, X→Y holds, where Y is a subset of X, it is trivial.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Closure of Functional Dependency"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="The closure of FD defined by A (set of attributes in relation R) is the set of all attributes that are eventually defined by A. Example,\n\n
+A → B\n
+B → C, D\n\n
+Then, closure (A)= A,B,C,D
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dependency Preservation"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="It is a property to decompose database schema D, in which each functional dependency X→Y in Functional dependency either appeared directly in one of the relational schemas Ri in the decomposed D or could be inferred from dependencies that appear in some Ri."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minimal/Canonical cover of Functional Dependency"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="It is used to remove redundancy from functional dependency. Steps to follow are:
+•	Let us suppose we have FD,\n\n
+A→BC\n
+D→E\n
+BC→D\n
+A→D\n
+Step 1) Keep only one attribute on RHS,\n\n
+A→B\n
+A→C\n
+D→E\n
+BC→D\n
+A→D\n
+Step 2) See whether that RHS attribute can be driven by LHS attribute using remaining FDs,if yes remove it otherwise keep it,\n\n
+A→B\n
+A→C\n
+D→E\n
+BC→E\n
+Step 3) Now for FDs having 2 or more attributes on LHS, find the closure of LHS attribute and then eliminate the attribute from LHS which are common in closures.\n\n
+B+= {B}\n
+C+= {C}\n
+Approach 2) X→ W\nWZ→XY\nY→WXZ\n\n
+Step 1) X→W\nWZ→X\nWZ→Y\nY→W\nY→X\nY→Z\n
+Step 2) Now here we will find closures firstly considering a production and then ignoring that production, if there is no difference then we will remove that production.\n\n
+Considering X→W,\n
+X+= XW\n
+Ignoring X→W,\n
+X+= X\n
+Hence, both closures are different. X→ W is not redundant.\n\n
+Similarly, considering WZ→X\n
+WZ+= WZXY\n
+Ignoring,WZ→X\n
+WZ+= WZYX\n
+Hence, it is redundant, remove it.\n
+Considering WZ→Y,\n
+WZ+=WZYX\n
+Ignoring,\n
+WZ+=WZ
+So closures are same hence it is essential and not redundant.\n
+Considering, Y→W,\n
+Y+=YWXZ\n
+Ignoring,\n
+Y+=YXZW\n
+Hence it is redundant\n
+Similarly Y→X and Y→Z are not redundant.\n\n
+
+X→W\nWZ→Y\nY→X\nY→Z\n
+
+Step 3) Consider WZ→Y\n
+(WZ)+= WZXY\n
+Ignore WZ→Y\n
+W+=W\n
+Z+=Z\n
+Here closures are not same hence none of W or Z on LHS is redundant or we can say  that if any one of the attribute on LHS is able to derive the other attribute on LHS then that other attribute is redundant.
+
+"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decomposition"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Lossless Decomposition\n\n
+Decomposition is lossless if it is feasible to reconstruct relation R from decomposed tables using Joins. For decomposition to be lossless there should be a common attribute between the decomposed relation table.\n
+A decomposition D = {R1,R2} of R has the lossless join property with respect to a set of functional dependencies F on R if and only if either FD ((R1 ∩ R2) → (R1 – R2)) is in F+, or
+FD ((R1 ∩ R2) → (R1 – R2)) is in F+\n
+Or\n
+R1ᴗ R2 =R\n
+Or\n
+R1ᴗ R2 = Null\n\n
+Lossy Decomposition\n\n
+When a relation is decomposed into two or more relational schemas, the loss of information is unavoidable when the original relation is retrieved.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Normalization"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="It is used to remove redundancy which may cause insert, update and delete anomalies. A table with two columns is said to be in most normalized form."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="First Normal Form"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="It states that every attribute must have atomic values. Comma separated or multi-values are not allowed."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Second Normal Form"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Firstly we need to understand partial dependency, so it means that a nonprime attribute is functionally dependent on part of a candidate key. In simple language if a non-prime attribute depends on part of a key rather than depending on entire key. For example,\n\n
+AB is a key\n
+AB → C\n
+So, A → C is a partial dependency.\n
+A relation schema R is in 2NF if every non-prime (non-key) attribute is fully functionally dependent on the prime key of R. There should be no partial dependency.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Third Normal Form"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A relation schema is in 3NF if it satisfies 2NF and no non-prime attribute of R is transitively dependent on primary key.\n
+3NF is considered adequate for normal relational database design because it is lossless and dependency preserving.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boyce-Codd Normal Form"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="The relation should be in 3NF and the above normal forms had non-prime attribute on RHS but BCNF states that for any functional dependency A → B, A must be a key and B can then be non-prime or prime attribute.\n
+In simple words for every FD, LHS is super key.\n
+Lossless decomposition into BCNF is always possible but dependency preserving in BCNF is not always possible.\n
+Any binary relationship is always in BCNF.\n
+If in 3NF there is no multiple overlapping candidate keys then that table is also in BCNF. Redundancy in the resulting set is zero.
+"/>
+
+    </LinearLayout>
+</ScrollView>

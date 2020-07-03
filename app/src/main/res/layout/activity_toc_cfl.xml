@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    tools:context=".TOC_CFL">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Context Free Grammar and Language"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorHeading"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Context Free Grammar"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Here the left side must be a single variable but unlike regular grammar right side is permitted anything.\n
+A grammar G = (V,T,S,P) is said to be context-free if all production in P have the form\n
+A→x \n
+Where A є V and xє (V  ∪ T)\n
+V is a finite set called the variables,\n
+T is a finite set, disjoint from V, called terminals,\n
+P is a finite set of productions\n
+S is the start variable\n
+Context free grammar is a more powerful way of describing languages which can describe recursive structures.\n
+An important application of context free grammar is in the compilation of programming languages. Most compilers contain parser that extracts the meaning of a program prior to generating a compiled code.\n
+Example of CFG, let grammar be G\n
+A  → 0A1\n
+A → B\n
+B → a\n
+The above grammar can generate string like 000a111 , etc.\n
+Here, V={A,B} , T={0,1,a}, S=a, P is the collection of production or rules\n
+All strings generated this way constitute the language of grammar and these languages are also called Context Free Language (CFL).
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leftmost and Rightmost Derivations"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="In CFG that are not linear, a derivation may involve sentential forms with more than one variable. For example take a production,\n
+S →AB\n
+A→ aaA\n
+A→ c\n
+B → Bb\n
+B → c\n
+
+So here production S has two variables.\n
+A derivation is said to be leftmost if in each step the leftmost variable in the sentential form is replaced. Similarly if in each step rightmost variable is replaced then we call it rightmost derivation.\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ambiguity"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Sometimes a grammar can generate the same string in several different ways. Such a string will have several different parse trees and thus several different meanings .If a grammar generates the same string in several different ways, we say that the string is derived ambiguously and such grammar is called ambiguous grammar."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Closure Properties of CFL"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Context free languages are accepted by pushdown automata but not by finite automata. \n\n
+Union\n
+If L1 and L2 are two CFL then their union will also be Context free. \n
+For example, L1= {anbncm | m>=0 and n>=0} and L2={ anbmcm | m>=0 and n>=0} so L1 U L2 is also context free. \n\n
+
+Concatenation\n
+L1.L2 is also context free . For example, L1={am bm  |m>=0} and L2 ={cnd n|n>=0}\n
+So, L1.L2 = {ambmcndn | m>=0 and n>=0} will also be context free. \n \n
+
+Kleene Closure\n
+If L1 is also Context free, its Kleene closure L1* is also context free.\n
+For example, L1={anbn | n>=0} , L1* ={anbn | n>=0} * will also be context free.\n\n
+
+Intersection\n
+If L1 and L2 are two context free languages, their intersection L1∩L2 need not be context free. For example, L1= {anbncm | m>=0 and n>=0} and L2={ anbmcm | m>=0 and n>=0}  , so L1∩L2 is not context free because L1 says number of a’s should be equal to number of b’s and L2 says number of b’s should be equal to c’s . Their intersection says both condition needs to be true but Pushdown automata can compare only two ,hence it is not context free.\n\n
+Complementation\n
+Complement may not be context free. We have to check in such cases.\n
+For example, complement of L1  is ∑* – L1, need not be context free.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Removal of unit productions"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="Any production of the form A →B where A,B є Non-terminals/Variables is called unit production.\n
+Steps to remove unit productions\n
+1)	To remove A →B , add production A →x to the grammar whenever B →x occurs in grammar [ x є terminal , x can be null].\n
+2)	Delete A →B from the grammar.\n
+3)	Repeat step 1 until all unit productions are removed.\n
+Example : For grammar G\n
+S →XY , X →a , Y →Z|b , Z → M , M → N , N → a\n
+Here unit productions are Y → Z , Z → M and M → N\n
+For M → N follow step 1,\n
+Since N → a, we add M → a\n
+Now for Z → M , since M → a we add Z → a\n
+For  Y → Z we can add Y → a as Z → a\n
+Now the new productions are\n
+S → XY , X → a, Y → a|b, Z → a, M → a, N → a\n
+After removing unreachable symbols  ,\n
+S → XY , X → a, Y → a|b\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Removal of є (null) productions"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A production of form ‘A → є ‘ is called null productions.\n
+Steps to remove null production\n
+1)	To remove A → є , look for all productions whose right side contains A.\n
+2)	Replace each occurrence of ‘A’ in each of these productions with є.\n
+3)	Add the resultant productions to the grammar.\n
+For example , S → ABAC , A → aA|є , B → bB|є , C → c\n
+Here null productions are A →є and B →є\n
+To eliminate A →є, we follow above steps\n
+S→ABAC is converted to S→ABAC|ABC|BAC|BC and A→ aA|є is converted to A→ aA and A→ a\n
+To eliminate B→є ,\n
+S→ABAC|ABC|BAC|BC  becomes S→AAC|AC|C , B→b\n
+
+So new productions are\n
+S→ ABAC|ABC|BAC|BC|AAC|AC|C\n
+A→ aA|a\n
+B→ bB|b\n
+C→ c\n
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chomsky Normal Form"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A context-free grammar is in Chomsky normal form if every rule is of the form\n
+A → BC or A → a\n
+Where a is terminal and A,B,C are variables. We can say that in this normal form right side can not contain more than two symbols\n
+Example, the grammar\n
+S →AS|a\n
+A →SA|b is in Chomsky normal form.But,\n
+S → AS|AAS\n
+A →SA|aa is not\n\n
+
+Any context free language is generated by a context free grammar in Chomsky normal from. In Chomsky normal form there is no є – production and no unit production.
+"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Convert CFG to Chomsky normal form"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="S → ASA|aB , A →B|S , B →b|є\n
+Following above steps, \n\n
+
+Step 1 ) \n
+S’ →S (As S is appearing on RHS) \n
+S → ASA|aB , A →B|S , B →b|є\n\n
+
+Step 2) Remove null productions\n
+After removing B→є\n
+S’→S , S→ ASA|aB|a , A→B|S|є, B→b\n
+We are getting now A→є , so after removing it\n
+S’→S , S→ ASA|aB|a|AS|SA|A , A→B|S , B→b\n\n
+
+Step 3) Remove unit production: S→S, S’→S ,A→B , A→S\n
+Remove S→S ,we get\n
+S’→S , S→ASA|aB|a|AS|SA ,A→B|S, B→b\n
+Remove S’→S , we get\n
+S’→ ASA|aB|a|AS|SA \n
+S→ASA|aB|a|AS|SA\n
+A→B|S\n
+B→b\n
+Remove A→B, \n
+S’→ ASA|aB|a|AS|SA \n
+S→ASA|aB|a|AS|SA \n
+A→b|S\n
+B→b\n
+Remove A→S\n
+S’→ ASA|aB|a|AS|SA \n
+S→ASA|aB|a|AS|SA \n
+A→b| ASA|aB|a|AS|SA\n
+B→b\n\n
+Step 4) Remove productions with more than two variables: S’→S , S→ASA, A→ASA\n
+S’→ AX|aB|a|AS|SA \n
+S→AX|aB|a|AS|SA \n
+A→b| AX|aB|a|AS|SA\n
+B→b\n
+X→SA\n\n
+Step 5)Remove production :S’→aB ,S→aB ,A→aB put Y→a\n
+S’→ AX|YB|a|AS|SA \n
+S→AX|YB|a|AS|SA \n
+A→b| AX|YB|a|AS|SA\n
+B→b\n
+Y→a\n
+X→SA"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Griebach Normal Form"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorSubHeading"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bordertextview"
+            android:padding="12dp"
+            android:text="A CFG is in Griebach Normal Form if the productions are of the form\n
+A→b\n
+A→bCDE…\n
+Where A,C,D,E… are non-terminals or variables and b is a terminal.\n
+"/>
+
+    </LinearLayout>
+
+</ScrollView>
